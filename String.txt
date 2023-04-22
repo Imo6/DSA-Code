@@ -1,0 +1,124 @@
+Strings in Java:
+
+-String objects are stored in a special memory area known as string constant pool.
+
+Q:- Why Java uses the concept of string literal?
+To make Java more memory efficient (because no new objects are created if it exists already in the string constant pool).
+
+
+Using new keyword:-
+
+    String str = new String(“Welcome”);
+In such a case, JVM will create a new string object in normal (non-pool) heap memory and the literal “Welcome” will be placed in the string constant pool. The variable 'str' will refer to the object in the heap (non-pool).
+
+-If you want to store this string in the constant pool then you will need to “intern” it.
+
+String internedString = str.intern(); 
+// this will add the string to string constant pool.
+
+
+
+
+Memory allotment of String:-
+
+Whenever a String Object is created as a literal, the object will be created in the String constant pool.
+
+Example: 
+
+String str = "Geeks";
+
+
+NOTE:- Ways of Creating a String
+
+       There are two ways to create a string in Java: 
+
+       String Literal
+       Using new Keyword
+
+Ques:- Why string is immutable?
+      Because,
+  --  In java, string objects are immutable. Immutable simply means unmodifiable or unchangeable.
+  --  Once a string object is created its data or state can’t be changed but a new string object is created.
+
+e.g.
+// Java Program to demonstrate Immutable String in Java
+
+import java.io.*;
+
+class GFG {
+	public static void main(String[] args)
+	{
+		String s = "Sachin";
+	
+		// concat() method appends the string at the end
+           s.concat(" Tendulkar");
+	
+		// This will print 'Sachin' because strings are immutable objects
+		System.out.println(s);
+	}
+}
+Output
+
+Sachin
+
+Here Sachin is not changed but a new object is created with “Sachin Tendulkar”. That is why a string is known as immutable.
+
+As you can see in the given figure that two objects are created but s reference variable still refers to “Sachin” and not to “Sachin Tendulkar”.
+But if we explicitly assign it to the reference variable, it will refer to the “Sachin Tendulkar” object. 
+
+e.g.
+// Java Program to demonstrate Explicitly assigned strings
+import java.io.*;
+
+class GFG {
+	public static void main(String[] args)
+	{
+		String s = "Sachin";
+		s = s.concat(" Tendulkar");
+		System.out.println(s);
+	}
+}
+
+Output
+
+Sachin Tendulkar
+
+
+StringBuffer:
+
+StringBuffer is a peer class of String.It represents mutable and writable character sequences.
+
+StringBuffer s = new StringBuffer("GeeksforGeeks");
+
+
+StringBuilder:
+
+-StringBuilder in Java represents a mutable sequence of characters.
+
+
+Difference between StringBuffer and StringBuilder:
+
+StringBuffer:
+
+-StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously.
+-StringBuffer was introduced in Java 1.0
+
+StringBuilder:
+
+-StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously.
+-StringBuilder was introduced in Java 1.5
+-StringBuilder is more efficient than StringBuffer.
+
+
+Ques:- Why StringBuffer is synchronized?
+
+
+StringTokenizer:
+
+StringTokenizer class in Java is used to break a string into tokens.
+
+
+
+
+
+
