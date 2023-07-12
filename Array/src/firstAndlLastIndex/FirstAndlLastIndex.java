@@ -3,7 +3,7 @@ package firstAndlLastIndex;
 public class FirstAndlLastIndex {
 
 	public static void main(String[] args) {
-		int []arr= {6,7,7,8,8,10,10};
+		int []arr= {6,6,6,1,7,7,7,8,8,10,10};
 		int key=8;
 		
 		int start=0;
@@ -17,7 +17,7 @@ public class FirstAndlLastIndex {
 			int mid=(start+end)/2;
 			if(arr[mid]==key) {
 				temp1=mid;
-				temp2=lastIndex(arr,key,mid+1,e);
+				temp2=lastIndex(arr,key,mid+1,e);//function call
 				end=mid-1;
 			}
 			else if(arr[mid]>key)

@@ -4,7 +4,8 @@ package slidingWindowProblem;
 public class SlidingWindowProblem {
 	public static void main(String[] args)
 	{
-		int []arr= {1,9,-1,-2,7,3,-1,2};
+		  int []arr= {1,9,-1,-2,7,3,-1,2};
+		  //int []arr= {2,4,-3,5,-1,10};
 		int res=SlidingWindowProblem.maxSubSum(arr,4);
 		System.out.println(res);
 	}

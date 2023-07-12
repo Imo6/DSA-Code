@@ -32,45 +32,45 @@ import java.util.*;
 //}
 
 
-////Second Highest & second Lowest
-//public class SecondHighestAndsecondSmallest {
-//	public static List<Integer> print(int []arr,int size) {
-//		int second_max=0;
-//		int second_min=0;
-//		List<Integer> list=new ArrayList<>();
-//		Arrays.sort(arr);
-//		for(int i=size-1;i>0;i--) {
-//			if(arr[i]!=arr[size-1])//print second maximum
-//			{
-//				second_max=arr[i];
-//				break;
-//			}
-//		}
-//		
-//		for(int i=0;i<size;i++){
-//			if(arr[i]!=arr[0])//print second minimum
-//			{
-//				second_min=arr[i];
-//				break;
-//			}
-//		}
-//		list.add(second_max);
-//		list.add(second_min);
-//		return list;
-//	}
-//
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//		int []arr= {5,10,-20,12,2,3,4,26};
-//		int size=arr.length;
-//		List<Integer> list=SecondHighestAndsecondSmallest.print(arr,size);
-//		System.out.println(list);
-//	}
-//
-//}
+//Second Highest & second Lowest
+public class SecondHighestAndsecondSmallest {
+	public static List<Integer> print(int []arr,int size) {
+		int second_max=0;
+		int second_min=0;
+		List<Integer> list=new ArrayList<>();
+		Arrays.sort(arr);
+		for(int i=size-1;i>0;i--) {
+			if(arr[i]!=arr[size-1])//print second maximum
+			{
+				second_max=arr[i];
+				break;
+			}
+		}
+		
+		for(int i=0;i<size;i++){
+			if(arr[i]!=arr[0])//print second minimum
+			{
+				second_min=arr[i];
+				break;
+			}
+		}
+		list.add(second_max);
+		list.add(second_min);
+		return list;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []arr= {5,10,-20,12,2,3,4,26};
+		int size=arr.length;
+		List<Integer> list=SecondHighestAndsecondSmallest.print(arr,size);
+		System.out.println(list);
+	}
+
+}
 
 
-
+/*
 public class SecondHighestAndsecondSmallest {
 	public static List<Integer> print(int []arr,int size) {
 		int max=arr[0];
@@ -111,8 +111,31 @@ public class SecondHighestAndsecondSmallest {
 		int size=arr.length;
 		List<Integer> list=SecondHighestAndsecondSmallest.print(arr,size);
 		System.out.println(list);
+		
+		int []arr1= {5,10,-20,12,2,-3,3,4,26};
+		Arrays.sort(arr1);
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(arr1[arr1.length-2]);
+		System.out.println(arr1[1]);
+		
 	}
 
-}
+}*/
+
+
+//public class SecondHighestAndsecondSmallest {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		int []arr1= {5,10,-20,12,2,-3,3,4,26};
+//		Arrays.sort(arr1);
+//		//System.out.println(Arrays.toString(arr1));
+//		System.out.println(arr1[arr1.length-2]);
+//		System.out.println(arr1[1]);
+//		
+//	}
+//
+//}
+
 
 

@@ -1,0 +1,12 @@
+Given a string, eliminate consecutive repeating words in a string with blank.
+
+Example:
+
+Input string: This will will get get get This one 
+output: one
+
+Input string: This will will be This get get get This one 
+output: This be one
+
+Input string: This is proper string. 
+output: This is proper string

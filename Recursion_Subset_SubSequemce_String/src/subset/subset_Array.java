@@ -1,6 +1,7 @@
 package subset;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class subset_Array {
@@ -13,7 +14,7 @@ public class subset_Array {
 	}
 	public static List<List<Integer>> subset(int[] arr) {
 		List<List<Integer>> outer=new ArrayList<>();
-		outer.add(new ArrayList<Integer>());
+		outer.add(new ArrayList<Integer>());//adding empty arraylist
 		
 		for(int num:arr)//for every number in my array
 		{

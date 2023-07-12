@@ -52,8 +52,8 @@ class MyComparator implements Comparator
 {
 	public int compare(Object obj1,Object obj2)
 	{
-		Employee e1=(Employee)obj1;
-		Employee e2=(Employee)obj2;
+		SortEmployeeByFirstNameAndLastName e1=(SortEmployeeByFirstNameAndLastName)obj1;
+		SortEmployeeByFirstNameAndLastName e2=(SortEmployeeByFirstNameAndLastName)obj2;
 		
 		String s1=e1.name;
 		String s2=e2.name;
@@ -62,11 +62,11 @@ class MyComparator implements Comparator
 	}
 }
 
-public class Employee{
+public class SortEmployeeByFirstNameAndLastName{
 	int eid;
 	String name;
 	
-	public Employee(String name,int eid) {
+	public SortEmployeeByFirstNameAndLastName(String name,int eid) {
 		this.eid=eid;
 		this.name=name;
 	}
@@ -77,11 +77,11 @@ public class Employee{
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Employee e1=new Employee("nag",100);
-		Employee e2=new Employee("balaih",200);
-		Employee e3=new Employee("chiru",50);
-		Employee e4=new Employee("venki",140);
-		Employee e5=new Employee("arti",900);
+		SortEmployeeByFirstNameAndLastName e1=new SortEmployeeByFirstNameAndLastName("nag",100);
+		SortEmployeeByFirstNameAndLastName e2=new SortEmployeeByFirstNameAndLastName("balaih",200);
+		SortEmployeeByFirstNameAndLastName e3=new SortEmployeeByFirstNameAndLastName("chiru",50);
+		SortEmployeeByFirstNameAndLastName e4=new SortEmployeeByFirstNameAndLastName("venki",140);
+		SortEmployeeByFirstNameAndLastName e5=new SortEmployeeByFirstNameAndLastName("arti",900);
 		
 		TreeSet t=new TreeSet(new MyComparator());
 		t.add(e1);

@@ -90,6 +90,8 @@ StringBuffer is a peer class of String.It represents mutable and writable charac
 
 StringBuffer s = new StringBuffer("GeeksforGeeks");
 
+Note:- StringBuffer is a peer class of String that provides much of the functionality of strings. String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences. StringBuffer may have characters and substrings inserted in the middle or appended to the end.
+
 
 StringBuilder:
 

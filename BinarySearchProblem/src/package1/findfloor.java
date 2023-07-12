@@ -22,7 +22,7 @@ public class findfloor {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		int []a= {1,2,4,5,6,9,11,15,19};
-		int []a= {2,3,5,9,14,16,18};
+		int []a= {2,3,5,9,16,18};
 		int res=findfloor.Ceiling(a,15);
 		System.out.println(res);
 

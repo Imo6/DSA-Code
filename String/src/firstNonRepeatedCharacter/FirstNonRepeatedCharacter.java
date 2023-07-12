@@ -14,6 +14,7 @@ public class FirstNonRepeatedCharacter {
 	public static void main(String[] args) {
 		String s="geeksforgeeks";
 		FirstNonRepeatedCharacter.findOccurance(s);
+		System.out.println(s.indexOf('g',1));
 	
 	}
 

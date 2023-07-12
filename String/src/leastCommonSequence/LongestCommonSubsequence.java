@@ -31,25 +31,24 @@ package leastCommonSequence;
 //
 //}
 
-// A Naive recursive implementation of LCS problem in java
 
-//A Naive recursive implementation of LCS problem in java
-
-import java.io.*;
-import java.util.*;
 
 public class LongestCommonSubsequence {
 
 	// Returns length of LCS for X[0..m-1], Y[0..n-1]
 	int lcs(String X, String Y, int m, int n)
 	{
+		
 		if (m == 0 || n == 0)
 			return 0;
-		if (X.charAt(m - 1) == Y.charAt(n - 1))
+		if (X.charAt(m - 1) == Y.charAt(n - 1)) 
+		{
 			return 1 + lcs(X, Y, m - 1, n - 1);
-		else
-			return max(lcs(X, Y, m, n - 1),
-					lcs(X, Y, m - 1, n));
+		}
+		else 
+		{
+			return max(lcs(X, Y, m, n - 1),lcs(X, Y, m - 1, n));
+		}
 	}
 
 	// Utility function to get max of 2 integers
